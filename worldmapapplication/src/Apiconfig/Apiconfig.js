@@ -1,9 +1,9 @@
-export const baseURL = "https://ets-web-gisc.herokuapp.com";
+export const baseURL = "https://countriesnow.space";
 
 const url = `${baseURL}/api`;
 
 const Apiconfigs = {
-  user: `${url}/user`,
+  getCountrydetails: `${url}/v0.1/countries/currency`,
 };
 
 export default Apiconfigs;
