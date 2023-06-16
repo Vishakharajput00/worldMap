@@ -77,19 +77,20 @@ data:{
   }
   const [selectedLocation, setSelectedLocation] = useState(null);
 
+
+
+
+  //for click map and get marker with coordinates
   const handleMapClick = (event) => {
     // console.log(event,'event')
     const { lat, lng } = event;
     console.log(lat,'event-')
-    const clickedLocation = cities.find((location) => location.latitude == lat && location.longitude == lng
-  
-    );
-
+    const clickedLocation = cities.find((location) => location.latitude == lat && location.longitude == lng);
+console.log('condition',cities.find((location) => location.latitude == lat && location.longitude == lng))
 // console.log(cities.latitude,'clicked')
     if (clickedLocation) {
       setSelectedLocation(clickedLocation);
     console.log(selectedLocation,'cdewdewdewdew')
-
     }
   };
 
